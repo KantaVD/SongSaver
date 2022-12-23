@@ -1,38 +1,70 @@
-.App {
+* {
+  background-color: lightgray;
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+  color: rgb(48, 252, 2);
   text-align: center;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  border: 2px solid hotpink;
+  background-color: brown;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.song-input {
+  border: 2px solid rgb(48, 252, 2);
+  text-align: center;
+  margin: 20px;
+}
+.song-input h3 {
+  background-color: rgb(48, 252, 2);
 }
 
-.App-link {
-  color: #61dafb;
+.input-form {
+  background-color:rgb(48, 252, 2);
+  width: auto;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  margin: 5px;
+}
+
+.add-song {
+  border-radius: 100%;
+  height: 50px;
+  background-color: hotpink;
+}
+
+.song-list {
+  border: 2px solid rgb(48, 252, 2);
+  margin: 20px;
+}
+.table{
+  width: 100%;
+}
+
+.table th {
+  background-color: rgb(48, 252, 2);
+  width: 20%;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.footer {
+  background-color: black;
+  color: rgb(48, 252, 2);
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
