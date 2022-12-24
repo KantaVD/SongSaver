@@ -13,9 +13,10 @@ class SongContainer extends Component {
             ]
         }
         this.addSong = this.addSong.bind(this)
+        this.deleteList = this.deleteList.bind(this)
     }
 
-    addSong = (song) => {
+    addSong(song) {
         const newSong = {
             id: this.state.songs.length +1,
             title: song.title,
@@ -24,6 +25,12 @@ class SongContainer extends Component {
             rating: song.rating
         }
         this.setState({songs: this.state.songs.concat(newSong)})
+    }
+
+    deleteList() {
+        this.setState({
+            songs:[]
+        })
     }
     
     render() { 
@@ -35,6 +42,7 @@ class SongContainer extends Component {
                 <SongList 
                     songs ={this.state.songs}
                     addSong = {this.addSong}
+                    deleteList = {this.deleteList}
                 />
             </div>
         );
