@@ -11,7 +11,7 @@ class SongInput extends Component {
             rating: " ",
         }
         this.onChange = this.onChange.bind(this)
-        this.addSong = this.onSubmit.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
     }
 
     onChange(event) {
