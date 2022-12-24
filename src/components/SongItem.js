@@ -1,5 +1,4 @@
-function SongItem ({id, title, artist, genre, rating}) {
-
+function SongItem({id, title, artist, genre, rating}) {
     return(
         <tr key = {id}>
             <td> {title} </td>

@@ -1,7 +1,6 @@
-import React from "react";
 import SongItem from "./SongItem";
 
-const SongList = ({songs}) => {
+function SongList({songs}) {
 
     const musicList = songs.map(song => (
         <SongItem 
@@ -14,7 +13,6 @@ const SongList = ({songs}) => {
         />
     ))
     
-
     return ( 
         <div className="song-list">
             <table className="table">
@@ -29,10 +27,7 @@ const SongList = ({songs}) => {
                 <tbody>
                     {musicList}
                 </tbody>
-                
-                
             </table>
-            
         </div>
      );
 }
